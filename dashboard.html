@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .dashboard-container {
+      text-align: center;
+      padding: 50px;
+    }
+
+    .dashboard-container h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .logout-btn {
+      padding: 10px 20px;
+      background-color: #e74c3c;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .logout-btn:hover {
+      background-color: #c0392b;
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard-container">
+    <h1>Welcome to the Dashboard!</h1>
+    <p>You are successfully logged in.</p>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </div>
+
+  <script>
+    function logout() {
+      alert("Logged out successfully!");
+      window.location.href = "index.html"; // redirect back to login
+    }
+  </script>
+</body>
+</html>
